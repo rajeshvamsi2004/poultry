@@ -1,0 +1,50 @@
+🚀 Installation & Setup
+
+Node.js (v18 or higher)
+MongoDB Atlas Account
+Gmail account (for sending OTPs)
+
+1. Clone the repository
+git clone https://github.com/your-username/cockbazar.git
+cd cockbazar
+
+2. Backend Setup
+cd backend
+npm install
+Create a .env file in the backend folder:
+MONGO_URI=your_mongodb_atlas_connection_string
+JWT_SECRET=your_random_secret_key
+EMAIL_USER=your_gmail@gmail.com
+EMAIL_PASS=your_gmail_app_password
+Note: For EMAIL_PASS, generate an App Password in your Google Account security settings.
+
+3. Frontend Setup
+cd frontend
+npm install
+
+4. Run the Project
+Start Backend:
+cd backend
+node server.js
+Start Frontend:
+code
+Bash
+cd frontend
+npm start
+
+
+📁 Folder Structure
+code
+Text
+/poultry-app
+  ├── backend
+  │   ├── models/        # Mongoose Schemas (User, Listing)
+  │   ├── routes/        # API Endpoints (Auth, AI, Shastra, Listings)
+  │   ├── middleware/    # JWT Auth Verification
+  │   └── server.js      # Entry Point
+  └── frontend
+      ├── src
+      │   ├── components/ # Navbar, BottomNav, ProductModal
+      │   ├── pages/      # Marketplace, Health, Shastra, Profile, Auth
+      │   ├── services/   # Axios API Config
+      │   └── App.js      # Routing & Protected Routes
