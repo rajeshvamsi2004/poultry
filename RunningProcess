@@ -48,3 +48,11 @@ Text
       │   ├── pages/      # Marketplace, Health, Shastra, Profile, Auth
       │   ├── services/   # Axios API Config
       │   └── App.js      # Routing & Protected Routes
+
+
+
+mongodb atals
+mongodb+srv://veeranna46:veeranna45@cluster0.4eajcme.mongodb.net/?appName=Cluster0
+
+password
+psxt pgdc kjvt afic
