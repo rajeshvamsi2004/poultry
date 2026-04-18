@@ -7,7 +7,7 @@ const aiRoutes = require('./routes/aiRoutes');
 const app = express();
 app.use(express.json());
 app.use(cors({
-    origin: 'http://localhost:3000',
+    origin: true,
     credentials: true
 }));
 
