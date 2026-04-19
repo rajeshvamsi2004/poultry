@@ -26,7 +26,10 @@ router.post('/send-otp', async (req, res) => {
             html: `<div style="padding:20px; text-align:center;"><h1>${otp}</h1><p>Use this code to login to CockBazar.</p></div>`
         });
         res.status(200).json({ message: "OTP Sent" });
-    } catch (err) { res.status(500).json({ error: "Email failed" }); }
+    } catch (err) {
+    console.log("MAIL ERROR:", err);
+    res.status(500).json({ error: err.message });
+}
 });
 
 // STEP 2: Verify OTP (Fix: Sends token for existing users)
