@@ -14,7 +14,10 @@ const Auth = () => {
         try {
             await API.post('/auth/send-otp', { email: formData.email });
             setStep(2);
-        } catch (err) { alert("Error sending code"); }
+        } catch (err) {
+    console.log("FULL ERROR:", err);
+    alert(err.response?.data?.error || "Error sending code");
+}
         setLoading(false);
     };
 
